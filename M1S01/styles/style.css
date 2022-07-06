@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 p {
-  font-size: 14px;s
+  font-size: 14px;
 }
 .botao {
   border-radius: 20px;
@@ -21,39 +21,47 @@ p {
   padding: 10px;
   margin-top: 20px;
 }
-.tituloVideo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.tituloVideo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.descricaoVideo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.descricaoVideo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-  }
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  .navbarDireita {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navbarEsquerda {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navbarDireita:hover{
-    background:crimson;
-    transition: 300ms;
-    transition-delay: 300ms;
-    color:black;
-  }
+.navbarDireita {
+  float: right;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbarEsquerda {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbarDireita:hover {
+  background: crimson;
+  transition: 300ms;
+  transition-delay: 300ms;
+  color: black;
+}
+.assinatura {
+  background-color: aqua;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+}
