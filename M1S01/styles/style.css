@@ -4,11 +4,15 @@
   color: brown;
   text-align: center;
 }
+.fundo {
+  background-image: url("../images/fundo.jpg");
+  margin: 0px;
+}
 body {
   background-color: gold;
 }
 p {
-  font-size: 14px;
+  font-size: 14px;s
 }
 .botao {
   border-radius: 20px;
