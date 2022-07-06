@@ -1,4 +1,4 @@
-h1 {
+.titulo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   color: brown;
@@ -9,4 +9,10 @@ body {
 }
 p {
   font-size: 14px;
+}
+.botao {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 20px;
 }
