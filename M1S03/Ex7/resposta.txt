@@ -1,0 +1,1 @@
+A requisição parecia ser uma api de cadastro de usuário contendo userId, id, title, completed. Sendo que na requisição em questão o titulo é uma parte do lorem ipssum.
