@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="formulario.js" type="module"></script>
+    <script src="usuario.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Ex7</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="formulario">
+        <form>
+          <label for="nome">Nome:</label><br />
+          <input type="text" name="nome" id="nome" /><br />
+          <label for="imagem">Imagem:</label><br />
+          <input type="text" name="imagem" id="imagem" /><br />
+          <label for="descricao">Descricao:</label><br />
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <div id="button-container">
+            <button type="submit">Salvar</button>
+          </div>
+        </form>
+      </div>
+      <div class="usuario"></div>
+    </div>
+  </body>
+</html>
