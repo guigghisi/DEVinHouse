@@ -1,0 +1,19 @@
+.Dados * {
+  margin: 0;
+}
+.Dados {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+}
+.Contato {
+  display: flex;
+  align-items: center;
+  background-color: rgb(235, 232, 232);
+  width: 30%;
+  border-radius: 10px;
+}
+.imagemDoPerfil {
+  border-radius: 50%;
+  margin: 10%;
+}
