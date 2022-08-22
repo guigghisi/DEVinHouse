@@ -1,27 +1,28 @@
 import "./App.css";
 import PropTypes from "prop-types";
-import Contato from "./Componentes/Contato/Contato";
+import Produto from "./Componentes/Produto/Produto";
 
 export default function App({ isLoading }) {
   if (isLoading === true) {
     return <p>Carregando...</p>;
   }
-  const contatos = [
+  const produtos = [
     {
-      nome: "Fulano",
-      imagem: "https://placeimg.com/64/64/people",
-      mensagem: "Olá, tudo bem?",
+      imagem:
+        "https://http2.mlstatic.com/D_NQ_NP_632159-MLB50098814188_052022-O.webp",
+      nome: "Produto 1",
+      preco: "R$ 100,00",
     },
   ];
-  Contato.propTypes = {
+  Produto.propTypes = {
     nome: PropTypes.string.isRequired,
     imagem: PropTypes.string.isRequired,
-    mensagem: PropTypes.string.isRequired,
+    preco: PropTypes.string.isRequired,
   };
   return (
     <>
-      {contatos.map((contato) => (
-        <Contato key={contato.nome} {...contato} />
+      {produtos.map((produto) => (
+        <Produto key={produto.nome} {...produto} />
       ))}
     </>
   );

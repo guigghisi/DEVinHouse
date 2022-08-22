@@ -1,0 +1,15 @@
+.produto {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 1%;
+}
+.imagemProduto {
+  width: 50%;
+  height: 50%;
+}
+.produto > p {
+  color: gold;
+}
