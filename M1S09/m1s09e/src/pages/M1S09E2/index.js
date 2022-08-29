@@ -1,4 +1,3 @@
-//Mostrar no console o valor digitado no input por meio do recurso useEffect
 
 import React, { useState, useEffect } from "react";
 

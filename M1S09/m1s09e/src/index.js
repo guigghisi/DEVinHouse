@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import M1S09E1 from "./pages/M1S09E1";
 import M1S09E2 from "./pages/M1S09E2";
+import M1S09E3 from "./pages/M1S09E3";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -11,7 +12,8 @@ root.render(
   <React.StrictMode>
     {/* <App />  */}
     {/* <M1S09E1 /> */}
-    <M1S09E2 />
+    {/* <M1S09E2 /> */}
+    <M1S09E3 />
   </React.StrictMode>
 );
 
