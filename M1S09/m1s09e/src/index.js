@@ -9,6 +9,7 @@ import M1S09E5 from "./pages/M1S09E5";
 import M1S09E6 from "./pages/M1S09E6";
 import M1S09E7 from "./pages/M1S09E7";
 import M1S09E8 from "./pages/M1S09E8";
+import M1S09E9 from "./pages/M1S09E9";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -23,7 +24,8 @@ root.render(
     {/* <M1S09E5 /> */}
     {/* <M1S09E6 /> */}
     {/* <M1S09E7 /> */}
-    <M1S09E8 />
+    {/* <M1S09E8 /> */}
+    <M1S09E9 />
   </React.StrictMode>
 );
 
