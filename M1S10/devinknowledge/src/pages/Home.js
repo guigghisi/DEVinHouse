@@ -1,0 +1,190 @@
+import "./index.css";
+export default function Home() {
+  return (
+    <div id="conteiner">
+      <div id="cadastro">
+        <div id="cabecalho">
+          <img id="livro" src="assets/book.png" alt="livro" />
+          <div id="textoTitulo">
+            <p>DEVin</p>
+          </div>
+          <div id="textoTituloH1">
+            <h1>Knowledge</h1>
+          </div>
+        </div>
+        <div id="subtitulo">
+          <p>Learn, Code and Save</p>
+        </div>
+        <div id="formulario">
+          <form method="post">
+            <div id="divInputTitulo">
+              <label for="labelTitulo">Título</label>
+              <input
+                type="text"
+                id="titulo"
+                name="titulo"
+                placeholder="Digite um título"
+                minlength="8"
+                maxlength="64"
+              />
+            </div>
+            <div id="divInputLinguagem">
+              <label for="labelLinguagem">Linguagem/Skill</label>
+              <input
+                type="text"
+                id="linguagem"
+                name="linguagem"
+                placeholder="Digite uma linguagem ou skill"
+                minlength="4"
+                maxlength="16"
+              />
+            </div>
+            <div id="divInputCategoria">
+              <label for="labelCategoria">Categoria</label>
+              <select
+                id="categoria"
+                name="categoria"
+                placeholder="Digite uma linguagem ou skill"
+              />
+              <option value="">Selecione uma categoria</option>
+              <option value="frontend">FrontEnd</option>
+              <option value="backend">BackEnd</option>
+              <option value="fullstack">FullStack</option>
+              <option value="comportamental/soft">Comportamental/Soft</option>
+            </div>
+            <div id="divInputDescricao">
+              <label for="labelDescricao">Descrição</label>
+              <textarea
+                id="descricao"
+                name="descricao"
+                placeholder="Escreva aqui o detalhamento da sua dica..."
+                minlength="32"
+                maxlength="512"
+              />
+            </div>
+            <div id="divInputVideo">
+              <label id="labelVideo" for="video">
+                Video do Youtube
+              </label>
+              <input
+                type="url"
+                id="video"
+                name="video"
+                placeholder="https://suaurl.com"
+              />
+            </div>
+            <div id="botoesForm">
+              <button type="reset" id="btnLimpar">
+                Limpar
+              </button>
+              <button type="submit" onclick="salvar()" id="btnSalvar">
+                Salvar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="cards">
+        <div id="indicativos">
+          <div id="indicativoTotal">
+            <p>Total</p>
+            <p id="total">0</p>
+          </div>
+          <div id="indicativoFrontEnd">
+            <p>FrontEnd</p>
+            <p id="frontEnd">0</p>
+          </div>
+          <div id="indicativoBackEnd">
+            <p>BackEnd</p>
+            <p id="backEnd">0</p>
+          </div>
+          <div id="indicativoFullStack">
+            <p>FullStack</p>
+            <p id="fullStack">0</p>
+          </div>
+          <div id="indicativoSoftSkill">
+            <p>SoftSkill</p>
+            <p id="softSkill">0</p>
+          </div>
+        </div>
+        <div id="pesquisa">
+          <form method="post">
+            <input
+              type="text"
+              id="inputPesquisa"
+              placeholder="Digite um título para buscar..."
+            />
+            <button type="button" id="btnPesquisa">
+              <img
+                id="lupa"
+                src="assets/lupa.png"
+                height="45px"
+                alt="lupa"
+                onclick="pesquisaCard()"
+              />
+            </button>
+            <button type="reset" id="btnLimparPesquisa">
+              <img
+                id="limparPesquisa"
+                src="assets/x.png"
+                height="30px"
+                alt="limparPesquisa"
+                onclick="colocarCardDiv()"
+              />
+            </button>
+          </form>
+        </div>
+        <div id="cardDicas">
+          <div id="modeloCard">
+            <div id="tituloCard">
+              <p>Título</p>
+            </div>
+            <div id="linguagemCard">
+              <p>
+                <strong>Linguagem/Skill: </strong>
+              </p>
+            </div>
+            <div id="categoriaCard">
+              <p>Categoria</p>
+            </div>
+            <div id="descricaoCard">
+              <p>Descrição</p>
+            </div>
+            <div id="botoesCard">
+              <div id="divBtnVideo">
+                <button type="button" id="btnVideo">
+                  <img
+                    id="iconeVideo"
+                    src="assets/video.png"
+                    height="30px"
+                    alt="iconeVideo"
+                  />
+                </button>
+              </div>
+              <div id="divBtnEditar">
+                <button type="button" id="btnEditar">
+                  <img
+                    id="iconeEditar"
+                    src="assets/editar.png"
+                    height="30px"
+                    alt="iconeEditar"
+                  />
+                </button>
+              </div>
+              <div id="divBtnExcluir">
+                <button type="button" id="btnExcluir">
+                  <img
+                    id="iconeLixeira"
+                    src="assets/lixeira.png"
+                    height="30px"
+                    alt="iconeLixeira"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
