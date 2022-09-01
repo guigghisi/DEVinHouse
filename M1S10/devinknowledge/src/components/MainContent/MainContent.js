@@ -1,55 +1,38 @@
+
+import Summary from "../Summary/Summary";
+
+
 export default function MainContent() {
   return (
     <div id="cards">
-      <div id="indicativos">
-        <div id="indicativoTotal">
-          <p>Total</p>
-          <p id="total">0</p>
-        </div>
-        <div id="indicativoFrontEnd">
-          <p>FrontEnd</p>
-          <p id="frontEnd">0</p>
-        </div>
-        <div id="indicativoBackEnd">
-          <p>BackEnd</p>
-          <p id="backEnd">0</p>
-        </div>
-        <div id="indicativoFullStack">
-          <p>FullStack</p>
-          <p id="fullStack">0</p>
-        </div>
-        <div id="indicativoSoftSkill">
-          <p>SoftSkill</p>
-          <p id="softSkill">0</p>
-        </div>
-      </div>
+      <Summary />
       <div id="pesquisa">
-        <form method="post">
-          <input
-            type="text"
-            id="inputPesquisa"
-            placeholder="Digite um título para buscar..."
+      <form method="post">
+        <input
+          type="text"
+          id="inputPesquisa"
+          placeholder="Digite um título para buscar..."
+        />
+        <button type="button" id="btnPesquisa">
+          <img
+            id="lupa"
+            src="assets/lupa.png"
+            height="45px"
+            alt="lupa"
+            onclick="pesquisaCard()"
           />
-          <button type="button" id="btnPesquisa">
-            <img
-              id="lupa"
-              src="assets/lupa.png"
-              height="45px"
-              alt="lupa"
-              onclick="pesquisaCard()"
-            />
-          </button>
-          <button type="reset" id="btnLimparPesquisa">
-            <img
-              id="limparPesquisa"
-              src="assets/x.png"
-              height="30px"
-              alt="limparPesquisa"
-              onclick="colocarCardDiv()"
-            />
-          </button>
-        </form>
-      </div>
+        </button>
+        <button type="reset" id="btnLimparPesquisa">
+          <img
+            id="limparPesquisa"
+            src="assets/x.png"
+            height="30px"
+            alt="limparPesquisa"
+            onclick="colocarCardDiv()"
+          />
+        </button>
+      </form>
+    </div>
       <div id="cardDicas">
         <div id="modeloCard">
           <div id="tituloCard">
