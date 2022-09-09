@@ -3,32 +3,32 @@ export default function Summary() {
   return (
     <div id="indicativos">
       <SummaryCard
-        idTitulo={"indicativoTotal"}
-        idNumero-={"total"}
+        idTitulo="indicativoTotal"
+        idNumero-="total"
         title="Total"
         count={0}
       />
       <SummaryCard
-        idTitulo={"indicativoFrontEnd"}
-        idNumero-={"frontEnd"}
+        idTitulo="indicativoFrontEnd"
+        idNumero-="frontEnd"
         title="FrontEnd"
         count={0}
       />
       <SummaryCard
-        idTitulo={"indicativoBackEnd"}
-        idNumero-={"backEnd"}
+        idTitulo="indicativoBackEnd"
+        idNumero-="backEnd"
         title="BackEnd"
         count={0}
       />
       <SummaryCard
-        idTitulo={"indicativoFullStack"}
-        idNumero-={"fullStack"}
+        idTitulo="indicativoFullStack"
+        idNumero-="fullStack"
         title="FullStack"
         count={0}
       />
       <SummaryCard
-        idTitulo={"indicativoSoftSkill"}
-        idNumero-={"softSkill"}
+        idTitulo="indicativoSoftSkill"
+        idNumero-="softSkill"
         title="SoftSkill"
         count={0}
       />
